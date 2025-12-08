@@ -8,7 +8,6 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
-  DragEndEvent,  // Explicit import
 } from "@dnd-kit/core";
 import {
   SortableContext,
@@ -18,6 +17,7 @@ import {
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { Plus, Folder, FileText, Search, X, GripVertical } from "lucide-react";
+import type { DragEndEvent } from "@dnd-kit/core";
 
 interface Document {
   id: string;
